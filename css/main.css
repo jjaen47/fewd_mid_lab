@@ -13,7 +13,300 @@
  */
 
 /* Globals */
+
+.rover-header-right-mobile{
+  display: none;
+}
+
+.rover-mobile-hero-container{
+  display: none;
+}
+.rover-hero-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    width: 100%;
+    margin: 0;
+  }
+  .rover-header-right-mobile{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    color: #14a96d;
+  }
+
+  section.rover-header-right{
+    display: none;
+  }
+
+  section.rover-header-left a{
+    display: none;
+  }
+
+  .rover-hero-container{
+    display: none;
+  }
+
+  .rover-hero-mobile{
+    display: block;
+    width: 100%;
+    margin: 10px;
+  }
+
+  p#mobile-text{
+    font-size: 6vmin;
+    color: #797b7c;
+    font-weight: bold;
+  }
+
+  div.rover-button.rover-cta-mobile{
+    font-size: 5vmin;
+    letter-spacing: 0;
+    text-transform: capitalize;
+  }
+
+  div.rover-hero-text{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 100%;
+  }
+
+  .rover-mobile-hero-container{
+    display: block;
+    display: flex;
+    width: 100%;
+  }
+  section.rover-middle-section{
+    width: 100%;
+  }
+
+  img.rover-mobile-hero{
+    height: 40vh;
+    margin: 5px;
+  }
+  
+  section.rover-two-boxes-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }  
+
+  div.rover-123-item-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  div.hero-text{
+    display: block;
+    width: 100%;
+  }
+  section.rover-action-shot{
+    width: 100%;
+  }
+  aside.rover-action-quote-container{
+    position: relative;
+    height: 60%;
+    width: 60%;
+    left: -10px;
+  }
+  div.rover-123-item{
+    display: flex;
+  }
+
+  .rover-123-item-container{
+    width: 100%;
+  }
+  .rover-123-item-container img{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  }
+
+}
+
 body {
   font-family: 'Cabin', sans-serif;
+  margin: 0;
 }
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.flex{
+  display: flex;
+}
+
+.justify{
+  justify-content: space-between;
+}
+
+.alignCenter{
+  text-align: center;
+}
+
+.rover-two-boxes-container{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 2rem;
+}
+
+.rover-header-link{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.rover-header-container{
+  height: 4rem;
+}
+
+.rover-header-left img{
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+.rover-header-left a{
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #a1b4c7;
+}
+.rover-header-right a{
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #a1b4c7;
+}
+
+.rover-cta-header p{
+  margin-left: 2rem;
+}
+
+header.rover-cta-header{
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+}
+.rover-cta-container{
+  padding: 1rem;
+  border-style: solid;
+  border-color: #cfd7de
+}
+
+.rover-hero-container{
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  height: 40vw;
+  width: 100vw;
+}
+
+.rover-hero-title{
+  font-size: 7vmin;
+  color: #66727c;
+}
+
+.rover-hero-container p{
+  color: #66727c;
+  font-size: 3vmin;
+}
+.rover-facts-container img{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+.mtb-5{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.rover-two-boxes-container{
+  margin-top: 2rem;
+}
+.rover-action-shot{
+  background-image: url("../img/lady-with-her-dogs.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+  display: flex;
+}
+
+.rover-action-quote-container{
+  background-color: #f4f5f6;
+  height: 50%;
+  width: 30%;
+}
+div.rover-hero-text{
+  position: relative;
+  top: 130px;
+  left: 50px;
+  width: 50%;
+}
+
+div.rover-button{
+  background-color: #14a96d;
+  text-align: center;
+  height: 50px;
+  width: 400px;
+  padding-top: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: wheat;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+aside.rover-action-quote-container{
+  position: relative;
+  height: 60%;
+  left: 90px;
+  top: -20px;
+}
+
+p.rover-quote{
+  font-size: 4vmin;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+p.rover-learn-more{
+  color: #66727c;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+p.rover-learn-more a{
+  text-decoration: none;
+  color: rgb(41, 197, 184);
+}
+
+div.rover-cta{
+  background-color: #14a96d;
+  height: 30px;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 3%;
+}
+
+ul.rover-facts li{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.rover-quote span{
+  color: #66727c;
+}
+
+.rover-123-item-container div{
+  margin: 3rem;
+  width: 100%;
+}
+
+.rover-123-item div{
+  margin: 20px;
+}
+
 
