@@ -230,6 +230,7 @@ header.rover-cta-header{
 .rover-hero-title{
   font-size: 7vmin;
   color: #66727c;
+  cursor: pointer;
 }
 
 .rover-hero-container p{
@@ -348,33 +349,36 @@ ul.rover-facts li{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(65, 223, 91);
+  background-color: rgba(18, 87, 9, 0.4);
 }
 .menu-content {
   background-color: #fefefe;
   margin: auto;
   width: 50%;
   height: 75%;
-  border: 1px solid #888;
-  animation: pop-anim 1s ease-in;
+  border: 1px solid rgb(68, 218, 118);
+  border-radius: 5%;
+  animation: pop-anim .5s ease-in;
 }
 
-.menu-content a{
+.menu-content nav a{
   display: flex;
   flex-direction: column;
+  text-align: center;
   height: 5px;
   text-decoration: none;
   color: rgb(80, 80, 80);
   font-weight: bold;
-  margin: 0;
+  margin: 10px;
 }
 
 .close {
-  color: #aaaaaa;
+  color: #0d6305;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin: auto 10px;
 }
 
 .close:hover,
@@ -382,6 +386,41 @@ ul.rover-facts li{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/*-------------- sign-up ---------------*/
+.sign-up-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 50%;
+  height: 60%;
+  border: 1px solid rgb(68, 218, 118);
+  border-radius: 5%;
+  animation: pop-anim .5s ease-in;
+}
+
+.sign-up-content form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sign-up-content form input{
+  margin: 10px;
+  width: 50%;
+  border-color: rgb(49, 218, 63);
+  border-style:groove;
+  border-radius: 5%;
+  height: 30px;
+}
+
+.sign-up-content form button{
+    background-color: #14a96d;
+    padding: 10px;
+    border-radius: 5%;
+    color: honeydew;
 }
 
 

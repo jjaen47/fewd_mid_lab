@@ -23,29 +23,30 @@
     document.querySelector(".rover-cta").innerText = "Thanks!";
 })
 
+document.querySelector(".rover-hero-title").addEventListener("click", function(){
+  document.querySelector(".rover-hero-title").innerText = "We're the Cat People";
+})
+
 var modal = document.getElementById("myMenu");
-
-// Get the button that opens the modal
+var modal2 = document.getElementById("mySignUp");
 var btn = document.querySelector(".rover-header-right-mobile");
-
-// Get the <span> element that closes the modal
+var btn2 = document.querySelector("#active-sign-up");
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
 
 
